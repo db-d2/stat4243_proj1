@@ -1,0 +1,44 @@
+{
+  "metrics_baseline": {
+    "walktrap": {
+      "silhouette_native_log2HVG_cosine": 0.045835334807634354
+    },
+    "leiden": {
+      "silhouette_PCA_cosine": 0.31916072964668274
+    },
+    "walktrap~leiden": {
+      "ARI": 0.6367084877420396,
+      "Rand": 0.9435578799640199
+    }
+  },
+  "impact_denoising": {
+    "denoise_pca": {
+      "silhouette_walktrap_native": 0.3507002890110016,
+      "silhouette_leiden_pca": 0.4575938582420349,
+      "ARI": 0.6847764630578583,
+      "Rand": 0.9476503619090385,
+      "marker_jaccard_vs_baseline": 0.05917159763313609
+    },
+    "denoise_knn": {
+      "silhouette_walktrap_native": 0.12527932226657867,
+      "silhouette_leiden_pca": 0.2930513918399811,
+      "ARI": 0.5919948175308721,
+      "Rand": 0.948267203195088,
+      "marker_jaccard_vs_baseline": 0.0875
+    }
+  },
+  "impact_batch_integration": {
+    "harmony": {
+      "silhouette_walktrap_native": 0.5179917216300964,
+      "silhouette_leiden_pca": 0.33011794090270996,
+      "ARI": 0.7631772037895779,
+      "Rand": 0.9572153800196167
+    },
+    "bbknn": {
+      "silhouette_walktrap_native": 0.009989552199840546,
+      "silhouette_leiden_pca": 0.3333514928817749,
+      "ARI": 0.7109776124926358,
+      "Rand": 0.958073001461845
+    }
+  }
+}
