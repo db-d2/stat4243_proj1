@@ -2,7 +2,7 @@
 
 ### View Analysis
 - **Website**: Visit the [GitHub Pages site](https://db-d2.github.io/stat4243_proj1/)
-- **Technical Write-up**: [Markdown version](./Writeup.md) | [PDF version](./Writeup.pdf)ing Methods
+- **Technical Write-up**: [Markdown version](./Writeup.md) | [PDF version](./Writeup.pdf)
 
 [![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://db-d2.github.io/stat4243_proj1/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
