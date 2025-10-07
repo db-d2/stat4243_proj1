@@ -11,6 +11,11 @@ theme: jekyll-theme-cayman
 markdown: kramdown
 highlighter: rouge
 
+# Kramdown settings for better math support
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
 # Navigation
 nav:
   - title: "Home"
