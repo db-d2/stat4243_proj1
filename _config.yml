@@ -1,0 +1,33 @@
+# Jekyll configuration for GitHub Pages
+title: "ROC Identification in Xenopus Tail Regeneration"
+description: "Comparative analysis of clustering methods, denoising approaches, and batch integration techniques for single-cell RNA sequencing data"
+author: "David Benson"
+
+# Theme - using minima or jekyll-theme-cayman for clean documentation look
+theme: jekyll-theme-cayman
+# Alternative themes: minima, jekyll-theme-minimal, jekyll-theme-architect
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Navigation
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "Methods"
+    url: "/methods/"
+  - title: "Results"
+    url: "/results/"
+  - title: "Code"
+    url: "/code/"
+  - title: "Data"
+    url: "/data/"
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - data/raw/
+  - code/.ipynb_checkpoints/
