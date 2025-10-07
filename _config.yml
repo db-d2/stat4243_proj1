@@ -3,6 +3,10 @@ title: "ROC Identification in Xenopus Tail Regeneration"
 description: "Comparative analysis of clustering methods, denoising approaches, and batch integration techniques for single-cell RNA sequencing data"
 author: "David Benson"
 
+# GitHub Pages settings
+baseurl: "/stat4243_proj1"  # Repository name for GitHub Pages
+url: "https://db-d2.github.io"  # Your GitHub Pages URL
+
 # Theme - using minima or jekyll-theme-cayman for clean documentation look
 theme: jekyll-theme-cayman
 # Alternative themes: minima, jekyll-theme-minimal, jekyll-theme-architect
