@@ -7,7 +7,7 @@ title: Home
 
 **Systematic evaluation of clustering algorithms, denoising techniques, and batch integration for single-cell RNA sequencing**
 
-[View Code](https://github.com/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb) | [Open in Colab](https://colab.research.google.com/github/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb)
+[View Code](https://github.com/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb) | [Open in Colab](https://colab.research.google.com/github/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb) | [Write-up Markdown version](./Writeup.md) | [Write-up PDF version](./Writeup.pdf)
 
 ## Abstract
 
