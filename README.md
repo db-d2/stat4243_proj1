@@ -1,4 +1,8 @@
-# Comparative Analysis of scRNA-seq Clustering Methods
+# Comparative Analysis of scRNA-seq Clu## Quick Start
+
+### View Analysis
+- **Website**: Visit the [GitHub Pages site](https://db-d2.github.io/stat4243_proj1/)
+- **Technical Write-up**: [Markdown version](./Writeup.md) | [PDF version](./Writeup.pdf)ing Methods
 
 [![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://db-d2.github.io/stat4243_proj1/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -24,7 +28,8 @@ roc-analysis/
 ├── README.md                               # This file
 ├── index.md                                # GitHub Pages homepage
 ├── _config.yml                             # Jekyll configuration
-├── Writeup.md       # Complete analysis
+├── Writeup.md                              # Complete analysis (Markdown)
+├── Writeup.pdf                             # Complete analysis (PDF)
 ├── code/
 │   └── ROC_xenopus_colab_final.ipynb     # Analysis notebook
 ├── data/
