@@ -1,6 +1,6 @@
 # Comparative Analysis of scRNA-seq Clustering Methods
 
-[![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://db-d2.github.io/roc-analysis/)
+[![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://db-d2.github.io/stat4243_proj1/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Systematic comparison of clustering algorithms, denoising techniques, and batch integration methods for single-cell RNA sequencing analysis, applied to Regeneration-Organizing Cell (ROC) identification in *Xenopus laevis* tail regeneration.
@@ -40,11 +40,11 @@ roc-analysis/
 ## Quick Start
 
 ### View Analysis
-Visit the [GitHub Pages site](https://db-d2.github.io/roc-analysis/) or read the [technical write-up](./Writeup.md).
+Visit the [GitHub Pages site](https://db-d2.github.io/stat4243_proj1/) or read the [technical write-up](./Writeup.md).
 
 ### Run Analysis
 Open the notebook in Google Colab:
-[ROC_xenopus_colab_final.ipynb](https://colab.research.google.com/github/db-d2/roc-analysis/blob/main/code/ROC_xenopus_colab_final.ipynb)
+[ROC_xenopus_colab_final.ipynb](https://colab.research.google.com/github/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb)
 
 ## Methods Summary
 

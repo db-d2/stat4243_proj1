@@ -108,7 +108,7 @@ where $a(i)$ is mean intra-cluster distance and $b(i)$ is mean nearest-cluster d
 
 ### Code Availability
 
-Complete implementation: https://github.com/[username]/xenopus-roc-analysis
+Complete implementation: https://github.com/db-d2/stat4243_proj1
 
 ## Results
 
@@ -196,10 +196,6 @@ This analysis demonstrates that systematic optimization of computational methods
 **Batch Correction Necessity**: Harmony's iterative approach achieved optimal results by learning batch-specific corrections while preserving global structure. BBKNN's graph-based correction, while computationally efficient, provided insufficient correction for strong batch effects.
 
 **Marker Selection Robustness**: The 73% concordance between logistic regression and Wilcoxon methods indicates robust marker identification. The parametric approach (logistic) captured more subtle markers through multivariate modeling, while the non-parametric approach (Wilcoxon) identified genes with largest effect sizes.
-
-### Computational Efficiency Considerations
-
-The complete optimal pipeline requires 127 seconds on standard hardware (16GB RAM), compared to 89 seconds for baseline processing. This 43% increase in computation time yields 11-fold improvement in clustering quality - a favorable trade-off for rare cell detection applications.
 
 ## Conclusion
 
