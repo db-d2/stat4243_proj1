@@ -54,7 +54,7 @@ Complete methods, results, and analysis including all equations, tables, and det
 - **Processed dataset**: `cleaned_processed_frogtail.h5ad` (1.2GB)
 - **Published markers**: `aav9996_tables3.xlsx` (Aztekin et al. 2019)
 - **Analysis notebook**: `ROC_xenopus_colab_final.ipynb`
-- **Technical report**: [Writeup.pdf](./Writeup.pdf) (3 pages, two-column format)
+- **Technical report**: [Writeup.pdf](./Writeup.pdf)
 
 ## Citation
 
