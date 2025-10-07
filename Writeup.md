@@ -14,7 +14,7 @@ This study implements and evaluates multiple computational approaches for rare c
 
 ### Data Structure and Preprocessing
 
-I analyzed a dataset of 13,199 cells × 31,535 genes from *Xenopus* tail tissue across intact and regenerating conditions. The data included multiple experimental batches requiring computational correction.
+I analyzed a published dataset from Aztekin et al. (2019) consisting of 13,199 cells × 31,535 genes from *Xenopus* tail tissue across intact and regenerating conditions. The data included multiple experimental batches requiring computational correction. All analyses represent a reanalysis of this published dataset using updated computational methods.
 
 ### Highly Variable Gene Selection
 
@@ -109,6 +109,21 @@ where $a(i)$ is mean intra-cluster distance and $b(i)$ is mean nearest-cluster d
 ### Code Availability
 
 Complete implementation: https://github.com/db-d2/stat4243_proj1
+
+### Software & Computational Environment
+
+All analyses were performed in Python 3.10+ using the following packages:
+- scanpy 1.9+ (single-cell analysis framework)
+- anndata 0.9+ (annotated data structures)
+- numpy 1.24+, pandas 2.0+ (data manipulation)
+- scipy 1.10+ (statistical functions)
+- scikit-learn 1.3+ (machine learning utilities)
+- python-igraph 0.10+ (graph algorithms)
+- leidenalg 0.9+ (community detection)
+- harmonypy 0.0.9+ (batch correction)
+- bbknn 1.6+ (batch-balanced k-NN)
+
+Random seeds were set to 42 for all stochastic operations to ensure reproducibility. Minimum hardware requirements: 16GB RAM, 4 CPU cores. Runtime: approximately 2-3 minutes on standard hardware.
 
 ## Results
 
@@ -208,6 +223,14 @@ Key computational findings:
 4. **Multiple validation approaches strengthen confidence**: Marker concordance between methods validates robustness
 
 This systematic evaluation provides a computational framework for rare cell identification that can be applied to other single-cell datasets. The validated pipeline achieves sufficient sensitivity to detect populations comprising ~1.6% of total cells while maintaining specificity through multiple orthogonal validation approaches. These improvements over standard pipelines demonstrate the importance of method optimization for challenging biological questions.
+
+### Limitations & Generalizability
+
+This analysis represents a computational methods comparison on a single *Xenopus* tail regeneration dataset. While the systematic approach is generalizable, specific parameter choices (e.g., HVG thresholds, clustering resolution) may require optimization for other datasets. The methods evaluated are well-established in single-cell analysis and applicable across species and tissue types, though performance may vary with dataset characteristics (cell count, batch effects, biological complexity).
+
+As an unsupervised clustering analysis, traditional train/test validation is not applicable; instead, robustness was assessed through multi-method comparison and validation against published markers. The computational pipeline requires moderate resources (16GB RAM minimum) and benefits from multi-core processing. All methods used fixed random seeds (seed=42) to ensure reproducibility.
+
+Future work could extend this comparison to additional datasets, evaluate computational efficiency at larger scales, and assess performance on datasets with varying levels of technical noise and biological complexity.
 
 ## References
 
