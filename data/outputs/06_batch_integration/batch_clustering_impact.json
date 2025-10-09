@@ -1,0 +1,17 @@
+{
+  "Baseline": {
+    "silhouette_walktrap": 0.04562202841043472,
+    "silhouette_leiden": 0.23024076223373413,
+    "ARI_walktrap_leiden": 0.3298877085583473
+  },
+  "Harmony": {
+    "silhouette_walktrap": 0.47098711306996016,
+    "silhouette_leiden": 0.23368458449840546,
+    "ARI_walktrap_leiden": 0.325286070020454
+  },
+  "BBKNN": {
+    "silhouette_walktrap": 0.3655204176902771,
+    "silhouette_leiden": 0.22318696975708008,
+    "ARI_walktrap_leiden": 0.3725076142839953
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "denoise_pca": {
+    "silhouette_walktrap_native": 0.49047282338142395,
+    "silhouette_leiden_pca": 0.29725807905197144,
+    "ARI": 0.3176965627591193,
+    "Rand": 0.9121735207017491,
+    "markers_vs_table_s3": 28,
+    "improvement_vs_baseline": 2
+  },
+  "denoise_knn": {
+    "silhouette_walktrap_native": 0.12235166877508163,
+    "silhouette_leiden_pca": 0.1610325574874878,
+    "ARI": 0.26553959982604597,
+    "Rand": 0.9420478260434784,
+    "markers_vs_table_s3": 40,
+    "improvement_vs_baseline": 14
+  }
+}

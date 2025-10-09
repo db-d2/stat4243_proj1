@@ -1,0 +1,12 @@
+{
+  "walktrap": {
+    "silhouette_native_log2HVG_cosine": 0.04562202841043472
+  },
+  "leiden": {
+    "silhouette_PCA_cosine": 0.13187463581562042
+  },
+  "walktrap~leiden": {
+    "ARI": 0.3298877085583473,
+    "Rand": 0.9262942114220839
+  }
+}

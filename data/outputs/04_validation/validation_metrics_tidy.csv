@@ -1,0 +1,5 @@
+method,metric,value
+leiden,silhouette_PCA_cosine,0.13187463581562042
+walktrap,silhouette_native_log2HVG_cosine,0.04562202841043472
+walktrap~leiden,ARI,0.3298877085583473
+walktrap~leiden,Rand,0.9262942114220839

@@ -1,0 +1,14 @@
+{
+  "Baseline": {
+    "validation_100": 19,
+    "validation_150": 24
+  },
+  "Harmony": {
+    "validation_100": 19,
+    "validation_150": 24
+  },
+  "BBKNN": {
+    "validation_100": 19,
+    "validation_150": 24
+  }
+}

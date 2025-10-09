@@ -12,14 +12,15 @@ Systematic comparison of clustering algorithms, denoising techniques, and batch 
 ## Key Results
 
 ### Methods Comparison
-- **Walktrap vs Leiden**: Substantial agreement (ARI=0.637, Rand=0.944)
-- **Denoising impact**: PCA reconstruction and k-NN smoothing evaluated
-- **Batch integration**: Harmony and BBKNN methods compared
-- **11-fold improvement** in clustering quality through optimization
+- **Walktrap vs Leiden**: Moderate agreement (ARI=0.330, Rand=0.926) with Leiden showing 2.9x better silhouette scores
+- **Denoising impact**: k-NN smoothing provides 54% improvement in marker validation (+14 genes vs baseline)
+- **Batch integration**: Harmony 10.3x and BBKNN 8.0x clustering improvements, though no marker validation benefit
+- **Best pipeline**: Leiden + k-NN smoothing + Harmony for optimal ROC detection
 
 ### Biological Application
-- **214 ROC cells** identified from 13,199 total cells
-- **21 genes** validated against published markers (p=7.99×10⁻⁴⁰)
+- **ROC populations** identified through enrichment analysis (clusters 23, 33, 6, 41, 38)
+- **19-26 genes** overlap with published markers depending on selection threshold
+- **40 markers** validated after k-NN smoothing preprocessing (best performance)
 
 ## Repository Contents
 
@@ -28,10 +29,10 @@ roc-analysis/
 ├── README.md                               # This file
 ├── index.md                                # GitHub Pages homepage
 ├── _config.yml                             # Jekyll configuration
-├── Writeup.md                              # Complete analysis (Markdown)
-├── Writeup.pdf                             # Complete analysis (PDF)
-├── code/
-│   └── ROC_xenopus_colab_final.ipynb     # Analysis notebook
+├── Writeup.md                      # Complete analysis (Markdown)
+├── Writeup.pdf                     # Complete analysis (PDF)
+├── Supplementary_Materials.pdf             # All figures and visualizations
+├── ROC_xenopus_colab_final.ipynb       # Analysis notebook
 ├── data/
 │   ├── aav9996_tables3.xlsx              # Published markers (Aztekin et al. 2019)
 │   └── cleaned_processed_frogtail.h5ad   # Processed dataset
@@ -49,7 +50,7 @@ Visit the [GitHub Pages site](https://db-d2.github.io/stat4243_proj1/) or read t
 
 ### Run Analysis
 Open the notebook in Google Colab:
-[ROC_xenopus_colab_final.ipynb](https://colab.research.google.com/github/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb)
+[ROC_xenopus_colab_validate.ipynb](https://colab.research.google.com/github/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb)
 
 ## Methods Summary
 

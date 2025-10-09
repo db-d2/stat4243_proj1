@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "silhouette_walktrap": 0.04562202841043472,
+    "ARI_walktrap_leiden": 0.3298877085583473,
+    "method": "original"
+  },
+  "harmony": {
+    "silhouette_walktrap": 0.47098711306996016,
+    "ARI_walktrap_leiden": 0.325286070020454,
+    "method": "scanpy.external"
+  },
+  "bbknn": {
+    "silhouette_walktrap": 0.3655204176902771,
+    "ARI_walktrap_leiden": 0.3725076142839953,
+    "method": "scanpy.external"
+  }
+}

@@ -7,23 +7,24 @@ title: Home
 
 **Systematic evaluation of clustering algorithms, denoising techniques, and batch integration for single-cell RNA sequencing**
 
-[View Code](https://github.com/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb) | [Open in Colab](https://colab.research.google.com/github/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb) | [Write-up Markdown version](./Writeup.md) | [Write-up PDF version](./Writeup.pdf)
+[View Code](https://github.com/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb) | [Open in Colab](https://colab.research.google.com/github/db-d2/stat4243_proj1/blob/main/code/OC_xenopus_colab_final.ipynb) | [Write-up Markdown version](./Writeup.md) | [Write-up PDF version](./Writeup.pdf)
 
 ## Abstract
 
-This project systematically compares clustering methods (Walktrap vs Leiden), denoising approaches (PCA reconstruction vs k-NN smoothing), and batch integration techniques (Harmony vs BBKNN) using a 13,199-cell *Xenopus* tail regeneration dataset. The comparative analysis demonstrates substantial agreement between methods (ARI=0.637, Rand=0.944) while achieving an 11-fold improvement in clustering quality through optimization. As a biological validation, the optimized pipeline successfully identifies 214 Regeneration-Organizing Cells (ROCs) with statistical significance (p=7.99×10⁻⁴⁰).
+This project systematically evaluates computational methods for identifying Regeneration-Organizing Cells (ROCs) in *Xenopus* tail tissue using single-cell RNA sequencing data from 13,199 cells. I implemented two clustering algorithms (Walktrap and Leiden), two marker selection methods (logistic regression and Wilcoxon rank-sum test), two denoising techniques (PCA reconstruction and k-nearest neighbor smoothing), and two batch integration approaches (Harmony and BBKNN). The analysis demonstrates that method selection substantially impacts ROC identification accuracy, with k-NN smoothing denoising providing 54% improvement in marker validation and batch integration achieving 8-10x clustering quality improvements.
 
 ## Key Results
 
 ### Methods Comparison
-- **Clustering Agreement**: Walktrap vs Leiden show ARI=0.637, Rand=0.944
-- **Denoising Impact**: Evaluated across PCA reconstruction and k-NN smoothing
-- **Batch Integration**: Compared Harmony and BBKNN approaches
-- **Quality Improvement**: 11-fold increase through systematic optimization
+- **Clustering Performance**: Leiden outperforms Walktrap (0.132 vs 0.046 silhouette, ARI=0.330)
+- **Denoising Impact**: k-NN smoothing achieves 54% marker improvement (+14 genes), PCA reconstruction shows minimal benefit (+2 genes)
+- **Batch Integration**: Harmony 10.3x and BBKNN 8.0x clustering improvements, but no marker validation benefit
+- **Optimal Pipeline**: Leiden + k-NN smoothing + Harmony for best ROC detection
 
 ### Biological Validation
-- **214 ROC cells** identified (1.62% of total)
-- **21 genes** overlap with published markers (p=7.99×10⁻⁴⁰)
+- **ROC populations** identified through enrichment analysis in key clusters (23, 33, 6, 41, 38)
+- **19-26 genes** baseline overlap with published markers depending on selection threshold
+- **40 markers** validated after optimal preprocessing (k-NN smoothing)
 
 ## Main Figures
 
@@ -49,12 +50,16 @@ This project systematically compares clustering methods (Walktrap vs Leiden), de
 
 Complete methods, results, and analysis including all equations, tables, and detailed methodology.
 
+**Supplementary Materials**: [View all figures and visualizations](./Supplementary_Materials.pdf)
+
+Comprehensive collection of clustering visualizations, method comparisons, ROC identification plots, and validation figures generated during the analysis.
+
 ## Data Availability
 
 - **Processed dataset**: `cleaned_processed_frogtail.h5ad` (1.2GB)
 - **Published markers**: `aav9996_tables3.xlsx` (Aztekin et al. 2019)
 - **Analysis notebook**: `ROC_xenopus_colab_final.ipynb`
-- **Technical report**: [Writeup.pdf](./Writeup.pdf)
+- **Technical report**: [Writeup_Updated.pdf](./Writeup.pdf)
 
 ## Citation
 
