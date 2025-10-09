@@ -165,14 +165,6 @@ The batch integration results illustrate an important limitation: computational 
 
 This suggests that while batch correction methods perform their intended function of improving clustering structure, the validation against published markers may be limited by differences in experimental design, cell isolation protocols, my lack of domain expertise or analytical approaches between studies rather than computational deficiencies.
 
-### Assignment Compliance
-
-The analysis successfully implements all required methodological categories:
-- **Clustering algorithms**: 2 methods (Walktrap, Leiden)
-- **Marker selection**: 2 methods (logistic regression, Wilcoxon)
-- **Denoising techniques**: 2 methods (PCA reconstruction, k-NN smoothing)
-- **Batch integration**: 2 methods (Harmony, BBKNN)
-
 ## Conclusion
 
 This computational evaluation identifies k-NN smoothing denoising as the most effective preprocessing step for ROC marker detection, improving validation overlap by 54% (26 to 40 genes). Batch integration methods provide substantial clustering improvements but show no marker validation benefit, likely reflecting experimental design constraints rather than methodological limitations.
