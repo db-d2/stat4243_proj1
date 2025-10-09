@@ -3,6 +3,7 @@
 ### View Analysis
 - **Website**: Visit the [GitHub Pages site](https://db-d2.github.io/stat4243_proj1/)
 - **Technical Write-up**: [Markdown version](./Writeup.md) | [PDF version](./Writeup.pdf)
+- **MI-CLAIM Checklist**: [Completed checklist](./The%20MI-CLAIM%20checklist_completed.pdf)
 
 [![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://db-d2.github.io/stat4243_proj1/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -32,6 +33,7 @@ roc-analysis/
 ├── Writeup.md                      # Complete analysis (Markdown)
 ├── Writeup.pdf                     # Complete analysis (PDF)
 ├── Supplementary_Materials.pdf             # All figures and visualizations
+├── The MI-CLAIM checklist_completed.pdf    # MI-CLAIM compliance checklist
 ├── ROC_xenopus_colab_final.ipynb       # Analysis notebook
 ├── data/
 │   ├── aav9996_tables3.xlsx              # Published markers (Aztekin et al. 2019)
