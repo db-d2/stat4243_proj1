@@ -1,4 +1,4 @@
-# Comparative Analysis of scRNA-seq Clu## Quick Start
+# Comparative Analysis of scRNA-seq Quick Start
 
 ### View Analysis
 - **Website**: Visit the [GitHub Pages site](https://db-d2.github.io/stat4243_proj1/)
