@@ -52,7 +52,7 @@ Visit the [GitHub Pages site](https://db-d2.github.io/stat4243_proj1/) or read t
 
 ### Run Analysis
 Open the notebook in Google Colab:
-[ROC_xenopus_colab_validate.ipynb](https://colab.research.google.com/github/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb)
+[ROC_xenopus_colab_final.ipynb](https://colab.research.google.com/github/db-d2/stat4243_proj1/blob/main/code/ROC_xenopus_colab_final.ipynb)
 
 ## Methods Summary
 

@@ -59,7 +59,7 @@ Comprehensive collection of clustering visualizations, method comparisons, ROC i
 - **Processed dataset**: `cleaned_processed_frogtail.h5ad` (1.2GB)
 - **Published markers**: `aav9996_tables3.xlsx` (Aztekin et al. 2019)
 - **Analysis notebook**: `ROC_xenopus_colab_final.ipynb`
-- **Technical report**: [Writeup_Updated.pdf](./Writeup.pdf)
+- **Technical report**: [Writeup.pdf](./Writeup.pdf)
 
 ## Citation
 
